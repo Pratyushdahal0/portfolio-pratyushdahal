@@ -6,7 +6,8 @@ This portfolio is designed as a clean personal-brand website with a light minima
 
 ## Live Preview
 
-Coming soon.
+https://pratyushdahal.infinityfreeapp.com/?i=1
+
 
 ## About the Project
 
