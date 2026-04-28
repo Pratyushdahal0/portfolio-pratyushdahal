@@ -1,188 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Protfolio</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Pratyush Dahal | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
-      <section class="head">
-        <a href="#" class="logo">Pratyush Dahal</a>
-        <nav class="navigator">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutme">About me </a></li>
-            <li><a href="#experience">Experience </a></li>
-            <li><a href="#projects">Projects </a></li>
-            <li><a href="#contact">Contact </a></li>
-          </ul>
-        </nav>
-      </section>
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo">Pratyush Dahal</a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
+
     <main>
-      <section id="home">
-        <figure></figure>
-        <span>
-          <p class="text1">Hello I'm</p>
-          <h2>Pratyush Dahal</h2>
-          <p class="tag">Web Developer </p>
-          <div class="medialinks">
-            <span class="linkedin">
-              <a
-                href=""
-                target="_blank"
-              >
-                <a href="https://www.linkedin.com/in/pratyush-dahal-4485472a3/">
-                  <i class="fa-brands fa-linkedin fa-2x"></i>
-                </a>
-              </a>
-            </span>
-            <span class="mail">
-              <a href="mailto:pratyushdahal33@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope fa-2x"></i>
-              </a>
-            </span>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-image-wrapper reveal">
+            <img
+              src="assets/images/pppp.jpeg"
+              alt="Pratyush Dahal"
+              class="profile-image"
+            />
           </div>
-        </span>
-      </section>
 
-      <section id="aboutme">
-        <span class="abtme"> Get to know more </span>
-        <h3>About me</h3>
-        <p class="shortbio">
-          I'm Pratyush Dahal born on 14 <sup>th</sup> February 2005, holding
-          Nepal's passport. I'm currently studying a Bachelor of Computer
-          Science at Herald College, Kathmandu, Nepal.
-        </p>
+          <div class="hero-content reveal delay-1">
+            <h3>Hello I'm</h3>
 
-        <table>
-          <span class="edu"> Education </span>
-          <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Boards</th>
-            <th>Marks</th>
-          </tr>
-          <tr>
-            <td>High School</td>
-            <td>Trinity International College</td>
-            <td>NEB</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>Secondary School</td>
-            <td>Shankari School</td>
-            <td>NEB</td>
-            <td>A+</td>
-          </tr>
-        </table>
-        <div>
-          <span class="int"> Interest</span>
-          <div class="interestbox">
-            <div class="b box1">
-              <div class="i1">
-                <i class="fa-solid fa-futbol fa-2x"> </i>
-                <span style="font-size: 22px"> Football </span>
-                <p class= "interestpara">
-                  From small age I have been watching and playing football.
-                </p>
-              </div>
+            <h1>
+              <span class="gradient-text">Pratyush Dahal</span>
+            </h1>
+
+            <h2>Web Developer</h2>
+
+            <div class="hero-socials">
+              <a
+                href="https://www.linkedin.com/in/pratyush-dahal-4485472a3/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a href="mailto:pratyushdahal33@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </div>
-            <div class="b box2">
-              <div class="i2">
-                <i class="fa-solid fa-music fa-2x"></i>
-                <span style="font-size: 22px"> Playing guitar</span>
-                <p class= "interestpara"></p>
-                I enjoy playing and learning to play the guitar in my spare time. I haven't learnt many songs, to be honest.
-                </p>
-             to </div>
-            </div>
-            <div class="b box3">
-              <div class="i3">
-                <i class="fa-solid fa-person-hiking fa-2x"></i>
-                <span style="font-size: 22px"> Hiking </span>
-                <p class= "interestpara"> Hiking creates lifelong memories and promotes both physical and mental well-being by providing adventure, exercise, mental clarity, a connection to nature, and accomplishment.</p>
-                </p>
-              </div>
-            </div>
-            <div class="b box4"></div>
           </div>
         </div>
       </section>
 
-      <section id="experience"><h3> Experience</h3>
-           <div class="exp">
-              <div class="expo exp1">
-                 </div>
-              <div class="expo exp2"></div>
-              <div class="expo exp3"></div>
-              <div class="expo exp4"></div>
-           </div>
-      </section>
-
-      <section id="projects">
-        <h3> Projects </h3>
-        <div class="project">
-          <div class="pro project1">
-            <div id="loader"></div>
-            <h3 id="weather"> Weather Application</h3>
-            <div class="link">
-              <span class="link1">
-                <a href="http://weatherapp-pratyush.free.nf/2461828_PratyushDahal_weatherapp.html" target="_blank">
-                  <button class="sitevisit"> Visit Site</button>
-                </a>
-              </span>
-            </div>
-             </div>
-          <div class="pro project2">
+      <!-- ================= ABOUT ================= -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>About Me</h2>
+            <p>
+              I am a dedicated Computer Science student based in Kathmandu,
+              Nepal, currently studying at Herald College Kathmandu in Naxal. My
+              journey in technology is driven by a passion for solving
+              real-world problems through clean, efficient code. I enjoy working
+              across full-stack development, from building intuitive user
+              interfaces to creating reliable backend systems.
+            </p>
           </div>
-          <div class="pro project3">
-            
-             </div>
-          <div class="pro project4"></div>
-          
-       </div>
+
+          <div class="about-cards">
+            <div class="info-card reveal">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>CS Student</h3>
+              <p>Pursuing excellence in computing and algorithms.</p>
+            </div>
+
+            <div class="info-card reveal delay-1">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Based in Kathmandu</h3>
+              <p>Drawing inspiration from the valley’s vibrant culture.</p>
+            </div>
+
+            <div class="info-card reveal delay-2">
+              <i class="fa-solid fa-code"></i>
+              <h3>Full-Stack Dev</h3>
+              <p>Building frontend interfaces and backend logic.</p>
+            </div>
+
+            <div class="info-card reveal delay-3">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Open to Internships</h3>
+              <p>Ready to contribute and learn in professional teams.</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="contact"> <h3> Contact </h3>
-        <div class="contactbox">
-          <form class="contactForm">
 
-           <label for="name">Name:</label>
-          <input type="text" class="form-field" name="name" id="name" placeholder="Name">
-           
-          <label for="email"> Email:</label>
-          <input type="email" class="form-field" name="email" id="email" placeholder="Email">
+      <!-- ================= EXPERIENCE ================= -->
+      <section class="experience section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Experience and Education</h2>
+          </div>
 
-          <label for="message"> Message: </label>
-          <textarea class="messagebox" name="message" placeholder="Your message"> </textarea>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 - Present</span>
+                <h3>Bachelor of Computer Science</h3>
+                <h4>Herald College Kathmandu</h4>
+                <p>
+                  Deepening theoretical knowledge in data structures,
+                  algorithms, databases, and software engineering while focusing
+                  on practical implementation of modern web technologies.
+                </p>
+              </div>
+            </div>
 
-          <input type="submit" id="submit" value="Send">
-            <h4> For more info you can can contact me on</h4>
-          <div class="socialmedia"> 
-            <span class="instagram">
-              <i class="fa-brands fa-instagram fa-2x"></i></span>
-            
-              <span class="github">
-                <a href="https://github.com/Pratyushdahal0?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github fa-2x">
-                </i>
-              </a>
-                 </span>
+            <div class="timeline-item reveal delay-1">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 - Present</span>
+                <h3>Full-Stack Development Projects</h3>
+                <h4>Personal & Academic Projects</h4>
+                <p>
+                  Developed database-driven applications including food
+                  delivery, e-commerce, admin dashboards, and support management
+                  systems using PHP, MySQL, JavaScript, HTML, and CSS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Selected Projects</h2>
+            <p>A showcase of my recent technical work.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-image placeholder food">
+                <span>FoodExpress</span>
+              </div>
+
+              <div class="project-body">
+                <h3>FoodExpress</h3>
+                <p>
+                  A full-stack food delivery ecosystem featuring restaurant
+                  listings, cart, checkout, order tracking, and role-based
+                  workflows.
+                </p>
+
+                <div class="tags">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>JS</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#">
+                    Details <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Pratyushdahal0/FoodDeliveryapplication"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-1">
+              <div class="project-image placeholder bakery">
+                <span>Sweet Grain Bakery</span>
+              </div>
+
+              <div class="project-body">
+                <h3>Sweet Grain Bakery</h3>
+                <p>
+                  Premium e-commerce platform for an artisan bakery with product
+                  categories, cart, wishlist, and checkout flow.
+                </p>
+
+                <div class="tags">
+                  <span>HTML/CSS</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#">
+                    Details <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-2">
+              <div class="project-image placeholder support">
+                <span>SupportDesk</span>
+              </div>
+
+              <div class="project-body">
+                <h3>SupportDesk</h3>
+                <p>
+                  Internal ticket management dashboard designed for streamlined
+                  customer support, ticket tracking, and admin workflows.
+                </p>
+
+                <div class="tags">
+                  <span>PHP</span>
+                  <span>JS</span>
+                  <span>MySQL</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#">
+                    Details <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Let’s Connect</h2>
+            <p>
+              I’m currently open to internship opportunities, junior developer
+              roles, academic collaborations, and real-world web development
+              projects.
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-info reveal">
+              <div class="contact-card main-contact-card">
+                <span class="contact-label">Get in touch</span>
+                <h3>Have a project or opportunity?</h3>
+                <p>
+                  Feel free to reach out if you want to discuss internships,
+                  collaboration, freelance work, or developer opportunities.
+                </p>
+              </div>
+
+              <div class="contact-list">
+                <div class="contact-item">
+                  <i class="fa-regular fa-envelope"></i>
+                  <div>
+                    <span>Email</span>
+                    <a href="mailto:pratyushdahal33@gmail.com">
+                      pratyushdahal33@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <span>Location</span>
+                    <p>Kathmandu, Nepal</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <div>
+                    <span>Availability</span>
+                    <p>Open to internships and junior roles</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-code"></i>
+                  <div>
+                    <span>Focus</span>
+                    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quick-links">
+                <a
+                  href="https://www.linkedin.com/in/pratyush-dahal-4485472a3/"
+                  class="quick-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/Pratyushdahal0"
+                  class="quick-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="assets/resume/Pratyush_Dahal_CV.pdf"
+                  class="quick-link"
+                  download
+                >
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  Resume
+                </a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal delay-1" id="contactForm">
+              <div class="form-header">
+                <h3>Send me a message</h3>
+                <p>I’ll try to reply as soon as possible.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Internship / Project / Collaboration"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell me about your opportunity or project..."
+                ></textarea>
+              </div>
+
+              <p class="form-status" id="formStatus"></p>
+
+              <button type="submit" class="btn primary-btn full-btn">
+                Send Message
+              </button>
             </form>
+            <p class="form-status" id="formStatus"></p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2023 Pratyush Dahal. All rights reserved. </p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="#home" class="footer-logo">Pratyush Dahal</a>
+
+        <p>© 2026 Pratyush Dahal</p>
+
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/pratyush-dahal-4485472a3/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/Pratyushdahal0" target="_blank">
+            GitHub
+          </a>
+          <a href="mailto:pratyushdahal33@gmail.com">Email</a>
+        </div>
+      </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

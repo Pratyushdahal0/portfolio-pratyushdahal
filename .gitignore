@@ -1,0 +1,8 @@
+# Private email configuration
+backend/config/mail.php
+
+# Composer dependencies
+vendor/
+
+# Mac system files
+.DS_Store
